@@ -329,6 +329,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
+    color :white;
     color: crimson;
     transition: color 0.3s ease;
 }
@@ -338,7 +339,11 @@ section .title::after{
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
+  
     margin: 10px 0 7px 0;
+}
+.services .serv-content .card .text p{
+    color:white !important;
 }
 
 /*=================================================================*/
@@ -346,7 +351,7 @@ section .title::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height:80vh;
     background-color: #073b4c;
   }
   
@@ -476,7 +481,7 @@ section .title::after{
   p {
     font-family:Georgia, 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif, cursive;
     margin: 40px;
-    color: #333;
+    color: white;
   }
   
   .name {
@@ -650,6 +655,24 @@ section .title::after{
     width: 70%;
 }
 
+.clickherebtn a{
+    background-color: crimson;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clickherebtn a:hover {
+   background-color: white;
+   color: crimson !important;
+   border: 1px solid crimson;
+}
+
+/*  */
+
 /* teams section styling */
 
 .co {
@@ -665,6 +688,7 @@ section .title::after{
     grid-gap: 10px;
     background-color: white;
     padding: 10px;
+
   }
   
   

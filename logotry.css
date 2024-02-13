@@ -1,0 +1,59 @@
+/* 
+@media screen and (max-width: 998px) { 
+  
+    .first, 
+    .second  
+    .third { 
+        width: 30%;
+
+    }
+    
+    .first img{
+        width:20%;
+    }
+    .second img{
+        width:20%;
+    }
+    .third img{
+        width:20%;
+    }
+} 
+
+
+
+@media screen and (max-width: 500px) { 
+  
+    .first, 
+    .second, 
+    .third { 
+        width: 30%;
+    }
+    
+    
+} 
+
+@media screen and (max-width: 299px) { 
+  
+    .first, 
+    .second, 
+    .third { 
+        width: 20%;
+    } 
+} 
+@media screen and (max-width: 200px) { 
+  
+    .first, 
+    .second, 
+    .third { 
+        width: 10%;
+    } 
+    .first img{
+        width:5%;
+    }
+    .second img{
+        width:5%;
+    }
+    .third img{
+        width:5%;
+    }
+}  */

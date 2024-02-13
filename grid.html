@@ -1,0 +1,269 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+    <link re="stylesheet" href= "grid.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<style>
+.grid-container {
+  display: grid;
+  
+  align-content: space-around;
+  grid-template-columns: auto  auto auto auto auto auto ;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-container >  div i{
+    font-size: 25px;
+    margin-right: 5px;
+
+}
+
+.hobby {
+  display: grid;
+  
+  align-content: space-around;
+  grid-template-columns: auto  auto auto  ;
+  grid-gap: 10px;
+  background-color: orange;
+  padding: 10px;
+}
+
+.hobby > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  
+  font-size: 30px;
+}
+.hobby > div img{
+    height:200px;
+    width:100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1433px) {
+  .hobby > div img {
+    height:100px;
+    width:200px;
+    object-fit: cover;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .grid-container > div {
+        font-size:10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-container > div:nth-child(1) i {
+        font-size:20px;
+  }
+  .grid-container > div:nth-child(3) i {
+        font-size:20px;
+  }
+  .grid-container > div:nth-child(5) i {
+        font-size:20px;
+  }
+}
+.team-area{
+  margin-top: 5%;
+}
+h3,p{
+  margin: 0;
+}
+.team-member:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.9);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+.team-member:hover:before{
+  opacity: 1;
+}
+.team-member{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.team-member:after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 170%;
+  top: 0;
+  transform: skewX(45deg);
+  transition: all 1s ease 0s;
+  background-color:#08A6F8;
+  z-index: 1;
+}
+.team-member:hover:after{
+  left: -170%;
+  top: 0;
+}
+.team-member img{
+  width: 100%;
+  height: auto;
+}
+.team-member .team-text{
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease 0s;
+}
+.team-member:hover .team-text{
+  bottom: 40%;
+}
+.team-member .team-text h3{
+  display: block;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  font-size:22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.team-member .team-text h4{
+  font-style: italic;
+  font-weight: 600;
+  display: block;
+  font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+  .team-member{
+    margin-bottom: 30px !important;
+  }
+}
+
+
+
+
+/* ignore the code below */
+
+
+
+</style>
+</head>
+<body>
+
+<h1>The align-content Property</h1>
+
+<p>Use the <em>align-content</em> property to vertically align the grid inside the container.</p>
+
+<p>The value "space-around" will give the rows equal amount of space around them:</p>
+
+<div class="grid-container">
+    <h2>hy</h2>
+  <div>
+    <i class="uil uil-trophy"></i>
+  </div>
+  <div>
+    <h3><span class="counter" data-counter="3">5</span></h3>
+    <h5>Certificate</h5>
+  </div>
+  <div>
+    <i class="uil uil-trophy"></i>
+  </div>  
+  <div>
+    <h3><span class="counter" data-counter="3">3</span></h3>
+    <h5>Certificate</h5>
+  </div>
+  <div>
+    <i class="uil uil-trophy"></i>
+  </div>
+  <div>
+    <h3><span class="counter" data-counter="3">3</span></h3>
+    <h5>Certificate</h5>
+  </div>  
+  </div>
+
+  <div class="hobby">
+      <div>
+          <img src="images/dance.jpeg">
+      </div>
+      <div>
+        <img src="images/travel.jpg">
+    </div>
+    <div>
+        <img src="images/photo.jpg">
+    </div>
+  </div>
+  <div class="team-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="team-member">
+            <img src="https://i.postimg.cc/W4rT75jV/1.jpg">
+            <div class="team-text">
+              <h3>James Bond</h3>
+              <h4>Graphics Designer</h4>
+              <p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-6">
+          <div class="team-member">
+            <img src="https://i.postimg.cc/k5xPSDFX/2.jpg">
+            <div class="team-text">
+              <h3>David Warner</h3>
+              <h4>Laravel Expert</h4>
+              <p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-sm-6">
+          <div class="team-member">
+            <img src="https://i.postimg.cc/mD8q39cR/3.jpg">
+            <div class="team-text">
+              <h3>Shaun Tait</h3>
+              <h4>Wordpress Expert</h4>
+              <p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  $('.counter').counterUp({
+    delay: 14,
+    time: 1000
+});
+</script>
+</body>
+</html>
